@@ -1,0 +1,7 @@
+package leetCode;
+
+public class WordBreak2 {
+	public static List<String> wordBreak(String s, Set<String> dict){
+		
+	}
+}

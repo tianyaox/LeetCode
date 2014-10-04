@@ -1,0 +1,56 @@
+package leetCode;
+
+public class NextPermutation {
+	public static void main(String[] args){
+		int[] num = {2,3,1};
+		nextPermutation(num);
+	}
+	
+	public static void nextPermutation(int[] num) {
+        if (num==null || num.length<2) return;
+        int leftChangeIndex = num.length-1;
+        int leftChange = num[leftChangeIndex];
+        
+        boolean success = false;
+        // find the first not acsending from backward
+        for (int i = num.length-2; i>=0; i--){
+            int curNum = num[i];
+            if (curNum<leftChange){
+                leftChange = curNum;
+                leftChangeIndex = i;
+                success = true;
+                break;
+            }
+        }
+        if (!success) {
+            reverse(num,0,num.length-1);
+            return;
+        }
+        // find the first to be larger than left change
+        int rightChangeIndex=num.length-1;
+        int rightChange=num[rightChangeIndex];
+        for (int i = num.length-1;i>=0;i--){
+            int curNum = num[i];
+            if (curNum>leftChange){
+                rightChangeIndex = i;
+                rightChange = curNum;
+                break;
+            }
+        }
+        num[leftChangeIndex] = rightChange;
+        num[rightChangeIndex] = leftChange;
+        reverse(num,leftChangeIndex+1,num.length-1);
+        return;
+    }
+    
+    public static void reverse(int[] num,int left,int right){
+        int end = right;
+        for (int i=left;i<=(right+1-left)/2;i++){
+            int temp = num[i];
+            num[i] = num[end];
+            num[end] = temp;
+            end--;
+        }
+        return;
+    }
+}

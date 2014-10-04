@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.3" sequence="1" timestamp="1399174435096" analysisTimestamp="1399174433126" release="">
+  <Project projectName="hw6">
+    <Jar>/Users/tianyaoxu/Documents/Dropbox/courses/15214/yajingt/homework/6/bin</Jar>
+    <AuxClasspathEntry>/Users/tianyaoxu/Documents/Dropbox/courses/15214/yajingt/homework/6/bin</AuxClasspathEntry>
+    <SrcDir>/Users/tianyaoxu/Documents/Dropbox/courses/15214/yajingt/homework/6/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="edu.cmu.cs.cs214.hw6.MapCommand">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.MapCommand" sourcefile="MapCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/MapCommand.java"/>
+    </Class>
+    <Method classname="edu.cmu.cs.cs214.hw6.MapCommand" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.MapCommand" start="42" end="86" startBytecode="0" endBytecode="835" sourcefile="MapCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/MapCommand.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.MapCommand" start="53" end="53" startBytecode="86" endBytecode="86" sourcefile="MapCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/MapCommand.java"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.MapCommand" start="53" end="53" startBytecode="86" endBytecode="86" sourcefile="MapCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/MapCommand.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="edu.cmu.cs.cs214.hw6.MapCommand">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.MapCommand" sourcefile="MapCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/MapCommand.java"/>
+    </Class>
+    <Field classname="edu.cmu.cs.cs214.hw6.MapCommand" name="TAG" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.MapCommand" sourcefile="MapCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/MapCommand.java"/>
+    </Field>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.MapCommand" start="31" end="31" startBytecode="7" endBytecode="7" sourcefile="MapCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/MapCommand.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="edu.cmu.cs.cs214.hw6.ReduceCommand">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.ReduceCommand" sourcefile="ReduceCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ReduceCommand.java"/>
+    </Class>
+    <Method classname="edu.cmu.cs.cs214.hw6.ReduceCommand" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.ReduceCommand" start="55" end="131" startBytecode="0" endBytecode="1614" sourcefile="ReduceCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ReduceCommand.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.ReduceCommand" start="100" end="100" startBytecode="401" endBytecode="401" sourcefile="ReduceCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ReduceCommand.java"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.ReduceCommand" start="100" end="100" startBytecode="401" endBytecode="401" sourcefile="ReduceCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ReduceCommand.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" abbrev="WMI" category="PERFORMANCE" first="1">
+    <Class classname="edu.cmu.cs.cs214.hw6.ReduceCommand">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.ReduceCommand" sourcefile="ReduceCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ReduceCommand.java"/>
+    </Class>
+    <Method classname="edu.cmu.cs.cs214.hw6.ReduceCommand" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.ReduceCommand" start="55" end="131" startBytecode="0" endBytecode="1614" sourcefile="ReduceCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ReduceCommand.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.ReduceCommand" start="84" end="84" startBytecode="252" endBytecode="252" sourcefile="ReduceCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ReduceCommand.java"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.ReduceCommand" start="84" end="84" startBytecode="252" endBytecode="252" sourcefile="ReduceCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ReduceCommand.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="edu.cmu.cs.cs214.hw6.ShuffleCommand">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.ShuffleCommand" sourcefile="ShuffleCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ShuffleCommand.java"/>
+    </Class>
+    <Method classname="edu.cmu.cs.cs214.hw6.ShuffleCommand" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.ShuffleCommand" start="39" end="86" startBytecode="0" endBytecode="612" sourcefile="ShuffleCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ShuffleCommand.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.ShuffleCommand" start="43" end="43" startBytecode="17" endBytecode="17" sourcefile="ShuffleCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ShuffleCommand.java"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.ShuffleCommand" start="43" end="43" startBytecode="17" endBytecode="17" sourcefile="ShuffleCommand.java" sourcepath="edu/cmu/cs/cs214/hw6/ShuffleCommand.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="edu.cmu.cs.cs214.hw6.plugin.wordcount.WordCountMapTask">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordcount.WordCountMapTask" sourcefile="WordCountMapTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordcount/WordCountMapTask.java"/>
+    </Class>
+    <Method classname="edu.cmu.cs.cs214.hw6.plugin.wordcount.WordCountMapTask" name="execute" signature="(Ljava/io/InputStream;Ledu/cmu/cs/cs214/hw6/Emitter;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordcount.WordCountMapTask" start="22" end="29" startBytecode="0" endBytecode="177" sourcefile="WordCountMapTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordcount/WordCountMapTask.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="43" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordcount.WordCountMapTask" start="22" end="22" startBytecode="5" endBytecode="5" sourcefile="WordCountMapTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordcount/WordCountMapTask.java"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordcount.WordCountMapTask" start="22" end="22" startBytecode="5" endBytecode="5" sourcefile="WordCountMapTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordcount/WordCountMapTask.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixMapTask">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixMapTask" sourcefile="WordPrefixMapTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordprefix/WordPrefixMapTask.java"/>
+    </Class>
+    <Method classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixMapTask" name="execute" signature="(Ljava/io/InputStream;Ledu/cmu/cs/cs214/hw6/Emitter;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixMapTask" start="19" end="33" startBytecode="0" endBytecode="269" sourcefile="WordPrefixMapTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordprefix/WordPrefixMapTask.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="608" end="609" startBytecode="0" endBytecode="43" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixMapTask" start="19" end="19" startBytecode="5" endBytecode="5" sourcefile="WordPrefixMapTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordprefix/WordPrefixMapTask.java"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixMapTask" start="19" end="19" startBytecode="5" endBytecode="5" sourcefile="WordPrefixMapTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordprefix/WordPrefixMapTask.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" abbrev="WMI" category="PERFORMANCE" first="1">
+    <Class classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixReduceTask">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixReduceTask" sourcefile="WordPrefixReduceTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordprefix/WordPrefixReduceTask.java"/>
+    </Class>
+    <Method classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixReduceTask" name="execute" signature="(Ljava/lang/String;Ljava/util/Iterator;Ledu/cmu/cs/cs214/hw6/Emitter;)V" isStatic="false">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixReduceTask" start="19" end="39" startBytecode="0" endBytecode="448" sourcefile="WordPrefixReduceTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordprefix/WordPrefixReduceTask.java"/>
+    </Method>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixReduceTask" start="32" end="32" startBytecode="121" endBytecode="121" sourcefile="WordPrefixReduceTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordprefix/WordPrefixReduceTask.java"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixReduceTask" start="32" end="32" startBytecode="121" endBytecode="121" sourcefile="WordPrefixReduceTask.java" sourcepath="edu/cmu/cs/cs214/hw6/plugin/wordprefix/WordPrefixReduceTask.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="edu.cmu.cs.cs214.hw6.util.StaffUtils">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.util.StaffUtils" sourcefile="StaffUtils.java" sourcepath="edu/cmu/cs/cs214/hw6/util/StaffUtils.java"/>
+    </Class>
+    <Method classname="edu.cmu.cs.cs214.hw6.util.StaffUtils" name="initProperties" signature="()V" isStatic="true">
+      <SourceLine classname="edu.cmu.cs.cs214.hw6.util.StaffUtils" start="44" end="65" startBytecode="0" endBytecode="263" sourcefile="StaffUtils.java" sourcepath="edu/cmu/cs/cs214/hw6/util/StaffUtils.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.util.StaffUtils" start="45" end="45" startBytecode="14" endBytecode="14" sourcefile="StaffUtils.java" sourcepath="edu/cmu/cs/cs214/hw6/util/StaffUtils.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.util.StaffUtils" start="46" end="46" startBytecode="18" endBytecode="18" sourcefile="StaffUtils.java" sourcepath="edu/cmu/cs/cs214/hw6/util/StaffUtils.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.util.StaffUtils" start="57" end="57" startBytecode="85" endBytecode="85" sourcefile="StaffUtils.java" sourcepath="edu/cmu/cs/cs214/hw6/util/StaffUtils.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.util.StaffUtils" start="61" end="61" startBytecode="86" endBytecode="86" sourcefile="StaffUtils.java" sourcepath="edu/cmu/cs/cs214/hw6/util/StaffUtils.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.util.StaffUtils" start="62" end="62" startBytecode="90" endBytecode="90" sourcefile="StaffUtils.java" sourcepath="edu/cmu/cs/cs214/hw6/util/StaffUtils.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.util.StaffUtils" start="63" end="63" startBytecode="94" endBytecode="94" sourcefile="StaffUtils.java" sourcepath="edu/cmu/cs/cs214/hw6/util/StaffUtils.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="edu.cmu.cs.cs214.hw6.util.StaffUtils" start="65" end="65" startBytecode="98" endBytecode="98" sourcefile="StaffUtils.java" sourcepath="edu/cmu/cs/cs214/hw6/util/StaffUtils.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 3 May 2014 23:33:42 -0400" total_classes="28" referenced_classes="111" total_bugs="9" total_size="958" num_packages="4" vm_version="24.45-b08" cpu_seconds="5.01" clock_seconds="1.98" peak_mbytes="314.46" alloc_mbytes="455.00" gc_seconds="0.03" priority_2="4" priority_1="5">
+    <PackageStats package="edu.cmu.cs.cs214.hw6" total_bugs="5" total_types="18" total_size="663" priority_2="2" priority_1="3">
+      <ClassStats class="edu.cmu.cs.cs214.hw6.AbstractClient" sourceFile="AbstractClient.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.ConcreteEmitter" sourceFile="ConcreteEmitter.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.Emitter" sourceFile="Emitter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.MapCommand" sourceFile="MapCommand.java" interface="false" size="44" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.MapReduceTuple" sourceFile="MapReduceTuple.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.MapTask" sourceFile="MapTask.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.MasterServer" sourceFile="MasterServer.java" interface="false" size="174" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.MasterServer$MapTaskCallable" sourceFile="MasterServer.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.MasterServer$ReduceTaskCallable" sourceFile="MasterServer.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.Partition" sourceFile="Partition.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.ReduceCommand" sourceFile="ReduceCommand.java" interface="false" size="67" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.ReduceCommand$ShuffleCallable" sourceFile="ReduceCommand.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.ReduceTask" sourceFile="ReduceTask.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.ShuffleCommand" sourceFile="ShuffleCommand.java" interface="false" size="43" bugs="1" priority_1="1"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.WorkerCommand" sourceFile="WorkerCommand.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.WorkerInfo" sourceFile="WorkerInfo.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.WorkerServer" sourceFile="WorkerServer.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.WorkerServer$WorkerCommandHandler" sourceFile="WorkerServer.java" interface="false" size="21" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.cmu.cs.cs214.hw6.plugin.wordcount" total_bugs="1" total_types="3" total_size="36" priority_1="1">
+      <ClassStats class="edu.cmu.cs.cs214.hw6.plugin.wordcount.WordCountClient" sourceFile="WordCountClient.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.plugin.wordcount.WordCountMapTask" sourceFile="WordCountMapTask.java" interface="false" size="12" bugs="1" priority_1="1"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.plugin.wordcount.WordCountReduceTask" sourceFile="WordCountReduceTask.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="edu.cmu.cs.cs214.hw6.plugin.wordprefix" total_bugs="2" total_types="3" total_size="51" priority_2="1" priority_1="1">
+      <ClassStats class="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixClient" sourceFile="WordPrefixClient.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixMapTask" sourceFile="WordPrefixMapTask.java" interface="false" size="16" bugs="1" priority_1="1"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.plugin.wordprefix.WordPrefixReduceTask" sourceFile="WordPrefixReduceTask.java" interface="false" size="21" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="edu.cmu.cs.cs214.hw6.util" total_bugs="1" total_types="4" total_size="208" priority_2="1">
+      <ClassStats class="edu.cmu.cs.cs214.hw6.util.KeyValuePair" sourceFile="KeyValuePair.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.util.Log" sourceFile="Log.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.util.StaffUtils" sourceFile="StaffUtils.java" interface="false" size="138" bugs="1" priority_2="1"/>
+      <ClassStats class="edu.cmu.cs.cs214.hw6.util.WorkerStorage" sourceFile="WorkerStorage.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="196" invocations="611" avgMicrosecondsPerInvocation="321" maxMicrosecondsPerInvocation="18057" standardDeviationMircosecondsPerInvocation="918"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="127" invocations="130" avgMicrosecondsPerInvocation="981" maxMicrosecondsPerInvocation="18581" standardDeviationMircosecondsPerInvocation="2593"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="123" invocations="128" avgMicrosecondsPerInvocation="967" maxMicrosecondsPerInvocation="13758" standardDeviationMircosecondsPerInvocation="2095"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="108" invocations="2" avgMicrosecondsPerInvocation="54133" maxMicrosecondsPerInvocation="75640" standardDeviationMircosecondsPerInvocation="21507"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="95" invocations="336" avgMicrosecondsPerInvocation="283" maxMicrosecondsPerInvocation="12444" standardDeviationMircosecondsPerInvocation="904"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="94" invocations="111" avgMicrosecondsPerInvocation="847" maxMicrosecondsPerInvocation="13941" standardDeviationMircosecondsPerInvocation="2017"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="82" invocations="119" avgMicrosecondsPerInvocation="692" maxMicrosecondsPerInvocation="9742" standardDeviationMircosecondsPerInvocation="1441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="72" invocations="97" avgMicrosecondsPerInvocation="747" maxMicrosecondsPerInvocation="10895" standardDeviationMircosecondsPerInvocation="1719"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="68" invocations="112" avgMicrosecondsPerInvocation="608" maxMicrosecondsPerInvocation="6006" standardDeviationMircosecondsPerInvocation="1087"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="53" invocations="112" avgMicrosecondsPerInvocation="475" maxMicrosecondsPerInvocation="7358" standardDeviationMircosecondsPerInvocation="1009"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="52" invocations="119" avgMicrosecondsPerInvocation="443" maxMicrosecondsPerInvocation="5635" standardDeviationMircosecondsPerInvocation="692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="43" invocations="55" avgMicrosecondsPerInvocation="783" maxMicrosecondsPerInvocation="12374" standardDeviationMircosecondsPerInvocation="1754"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="42" invocations="614" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="2919" standardDeviationMircosecondsPerInvocation="128"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="34" invocations="111" avgMicrosecondsPerInvocation="314" maxMicrosecondsPerInvocation="3738" standardDeviationMircosecondsPerInvocation="539"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="21" invocations="569" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="667" standardDeviationMircosecondsPerInvocation="69"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="20" invocations="28" avgMicrosecondsPerInvocation="742" maxMicrosecondsPerInvocation="6629" standardDeviationMircosecondsPerInvocation="1652"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="20" invocations="2685" avgMicrosecondsPerInvocation="7" maxMicrosecondsPerInvocation="391" standardDeviationMircosecondsPerInvocation="20"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="20" invocations="52" avgMicrosecondsPerInvocation="398" maxMicrosecondsPerInvocation="1763" standardDeviationMircosecondsPerInvocation="478"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="19" invocations="28" avgMicrosecondsPerInvocation="691" maxMicrosecondsPerInvocation="5962" standardDeviationMircosecondsPerInvocation="1145"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="17" invocations="111" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="1500" standardDeviationMircosecondsPerInvocation="220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="17" invocations="111" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="2081" standardDeviationMircosecondsPerInvocation="299"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="17" invocations="110" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="5173" standardDeviationMircosecondsPerInvocation="674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="16" invocations="28" avgMicrosecondsPerInvocation="601" maxMicrosecondsPerInvocation="3758" standardDeviationMircosecondsPerInvocation="823"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="16" invocations="111" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="1393" standardDeviationMircosecondsPerInvocation="246"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="16" invocations="119" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="2186" standardDeviationMircosecondsPerInvocation="278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="15" invocations="28" avgMicrosecondsPerInvocation="551" maxMicrosecondsPerInvocation="3432" standardDeviationMircosecondsPerInvocation="919"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="14" invocations="27" avgMicrosecondsPerInvocation="552" maxMicrosecondsPerInvocation="2456" standardDeviationMircosecondsPerInvocation="638"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="14" invocations="124" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="832" standardDeviationMircosecondsPerInvocation="129"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="13" invocations="135" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="491" standardDeviationMircosecondsPerInvocation="98"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="12" invocations="28" avgMicrosecondsPerInvocation="454" maxMicrosecondsPerInvocation="4105" standardDeviationMircosecondsPerInvocation="798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="12" invocations="111" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="2540" standardDeviationMircosecondsPerInvocation="386"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1399174435096" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

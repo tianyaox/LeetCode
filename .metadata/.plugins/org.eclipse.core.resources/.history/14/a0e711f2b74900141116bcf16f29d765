@@ -1,0 +1,6 @@
+package leetCode;
+
+public class UndirectedGraphNode {
+	int label;
+	List<UndirectedGraphNode> neighborsl
+}

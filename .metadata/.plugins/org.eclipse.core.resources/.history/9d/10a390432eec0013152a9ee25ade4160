@@ -1,0 +1,19 @@
+package leetCode;
+
+public class ReversePartOfArray {
+	public static void main(String[] args){
+		int[] a = {2,1,3};
+		reverse(a,1,2);
+		System.out.print(a);
+	}
+	public static void reverse(int[] num, int left, int right){
+		int end = right;
+		for (int i=0;i<(right+1-left)/2;i++){
+			int temp = num[i];
+			num[i] = num[end];
+			num[end] = temp;
+			end--;
+		}
+		return;
+	}
+}

@@ -1,0 +1,10 @@
+package leetCode;
+
+import java.util.ArrayList;
+
+public class ConstructBinaryTree {
+	public TreeNode construct(ArrayList<Integer> preorder,
+			ArrayList<Integer> inorder) {
+		
+	}
+}

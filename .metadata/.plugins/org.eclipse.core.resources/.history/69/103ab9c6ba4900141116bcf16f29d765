@@ -1,0 +1,14 @@
+package leetCode;
+
+import java.util.Stack;
+
+public class CopyGraph {
+	public static UndirectedGraphNode cloneGraph(UndirectedGraphNode node){
+		if (node == null){
+			return null;
+		}
+		Stack<UndirectedGraphNode> visit = new Stack<UndirectedGraphNode>();
+		UndirectedGraphNode cpCur = new UndirectedGraphNode(node.label);
+		HashMap<UndirectedGraphNode,UndirectedGraphNode> copyMap = new HashMap<UndirectedGraphNode,UndirectedGraphNode>();
+	}
+}

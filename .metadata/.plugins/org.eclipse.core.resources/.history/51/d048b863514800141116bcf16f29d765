@@ -1,0 +1,7 @@
+package leetCode;
+
+public class wordBreak {
+	public boolean wordBreak(String s, Set<String> dict){
+		
+	}
+}

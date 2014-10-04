@@ -1,0 +1,78 @@
+package leetCode;
+
+public class SurroundedRegion {
+	public void solve(char[][] board) {
+		for (int j=0;j<board[0].length;j++){
+			if (board[0][j]=='0'){
+				checkNeighbor(0,j,board);
+			}
+			if (board[board.length-1][j]=='0'){
+				checkNeighbor(0,j,board);
+			}
+		}
+		for (int i=0;i<board.length;i++){
+			if (board[i][0]=='0'){
+				checkNeighbor(i,0,board);
+			}
+			if (board[i][board[0].length-1]=='0'){
+				checkNeighbor(i,board[0].length-1,board);
+			}
+			
+		}
+		
+		for (int i=0;i<board.length;i++){
+			for (int j=0;j<board[0].length;j++){
+				if (board[i][j]=='Y'){
+					board[i][j]='X';
+				}
+			}
+		}
+	}
+	
+	public void checkNeighbor(int row,int col, char[][] board){
+		if (board[row][col]=='0'){
+			board[row][col] = 'Y';	
+		}
+		else{
+			return;
+		}
+		if (row-1>0){
+			checkNeighbor(row-1,col,board);
+		}
+		if (col-1>0){
+			checkNeighbor
+		}
+		
+		if (row==0||row==board.length-1){
+			if (col==0){
+				checkNeighbor(row+1,col,board);
+				checkNeighbor(row,col+1,board);
+				return;
+			}
+			else if (col==board[0].length-1){
+				checkNeighbor(row+1,col,board);
+				checkNeighbor(row,col-1,board);
+				return;
+			}
+			else{
+				if (row==0) checkNeighbor(row+1,col,board);
+				if (row==(board.length-1)) checkNeighbor(row-1,col,board);
+
+				checkNeighbor(row,col-1,board);
+				checkNeighbor(row,col+1,board);
+				return;
+			}
+		}
+		if (col==0){
+			checkNeighbor(row,col+1,board);
+			
+		}
+		else if (col==board[0].length-1){
+			checkNeighbor(row,col-11,board);
+		}
+		checkNeighbor(row+1,col,board);
+		checkNeighbor(row-1,col,board);
+		return;
+		
+	}
+}

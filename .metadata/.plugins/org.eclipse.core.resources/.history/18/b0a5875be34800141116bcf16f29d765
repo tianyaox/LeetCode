@@ -1,0 +1,18 @@
+package leetCode;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+
+public class WordBreak2 {
+	public static List<String> wordBreak(String s, Set<String> dict){
+//		single word
+		String result;
+		List<String> solution;
+		int len = s.length();
+//		helper
+		Boolean[] a =new Boolean[s.length()];
+		List<Boolean> possible = new ArrayList<String>(Arrays.asList(a));
+		
+	}
+}

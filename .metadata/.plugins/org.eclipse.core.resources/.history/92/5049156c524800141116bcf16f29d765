@@ -1,0 +1,26 @@
+package leetCode;
+
+import java.util.Set;
+
+public class wordBreak {
+	public boolean wordBreak(String s, Set<String> dict){
+//		StringBuffer curS = new StringBuffer();
+		for (int i=0;i<s.length();i++){
+			String curS = s.substring(0, i);
+			if (dict.contains(curS)){
+				dict.remove(curS);
+				if (wordBreak(s.substring(i,s.length()),dict)){
+					return true;
+				}
+				else{
+					dict.add(curS);
+					continue
+				}
+			}
+			
+		}
+		
+		
+		
+	}
+}

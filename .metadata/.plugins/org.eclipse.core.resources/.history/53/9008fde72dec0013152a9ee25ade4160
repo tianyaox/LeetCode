@@ -1,0 +1,7 @@
+package leetCode;
+
+public class ReversePartOfArray {
+	public void reverse(int[] num, int left, int right){
+		
+	}
+}

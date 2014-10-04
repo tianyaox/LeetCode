@@ -1,0 +1,34 @@
+package leetCode;
+
+import java.util.*;
+
+public class SumNumbers {
+	public int sumNumbers(TreeNode root) {
+        Stack<TreeNode> s = new Stack<TreeNode>();
+        Stack<Integer> curNumStr = new Stack
+        s.add(root);
+        int sum = 0;
+        StringBuffer curNum = new StringBuffer();
+        
+        while (!s.isEmpty()){
+            TreeNode cur = s.pop();
+            curNum.append(cur.val);
+            if (cur.left==null && cur.right==null){
+                addToSum(sum,curNum);
+            }
+            if (cur.left!=null){
+            	s.add(cur.left);
+            }
+            if (cur.right!=null){
+            	s.add(cur.right);
+            }
+        }
+        return sum;
+    }
+	
+	public void addToSum(int sum, StringBuffer curNum){
+		int newNum = Integer.parseInt(curNum.toString());
+		sum+=newNum;
+		curNum.setLength(0);
+	}
+}

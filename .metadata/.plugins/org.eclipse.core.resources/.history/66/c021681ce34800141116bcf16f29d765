@@ -1,0 +1,12 @@
+package leetCode;
+
+import java.util.List;
+import java.util.Set;
+
+public class WordBreak2 {
+	public static List<String> wordBreak(String s, Set<String> dict){
+//		single word
+		String result;
+		List<String> 
+	}
+}

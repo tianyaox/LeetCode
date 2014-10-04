@@ -1,0 +1,37 @@
+package leetCode;
+
+public class SurroundedRegion {
+	public void solve(char[][] board) {
+		for (int j=0;j<board[0].length;j++){
+			if (board[0][j]=='0'){
+				checkNeighbor(0,j,board);
+			}
+			if (board[board.length-1][j]=='0'){
+				checkNeighbor(0,j,board);
+			}
+		}
+	}
+	
+	public void checkNeighbor(int row,int col, char[][] board){
+		board[row][col] = 'Y';
+		if (row==0){
+			if (col==0){
+				checkNeighbor(row+1,col,board);
+				checkNeighbor(row,col+1,board);
+				return;
+			}
+			else if (col==board[0].length-1){
+				checkNeighbor(row+1,col,board);
+				checkNeighbor(row,col-1,board);
+				return;
+			}
+			else{
+				checkNeighbor(row+1,col,board);
+				checkNeighbor(row,col-1,board);
+				checkNeighbor(row,col+1,board);
+			}
+		}
+		
+		
+	}
+}

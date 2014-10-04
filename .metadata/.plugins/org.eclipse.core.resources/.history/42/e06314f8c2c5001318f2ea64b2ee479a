@@ -1,0 +1,21 @@
+package leetCode;
+
+import java.util.ArrayList;
+
+public class ConstructBinaryTree {
+	public TreeNode construct(ArrayList<Integer> preorder,
+			ArrayList<Integer> inorder) {
+		// Get head in preorder;
+		int head = preorder.get(0);
+		// Split inorder
+		ArrayList<Integer> left = new ArrayList<Integer>();
+		ArrayList<Integer> right = new ArrayList<Integer>();
+		for (int i=0;i<inorder.size();i++){
+			if (inorder.get(i)==head){
+				left = (ArrayList)inorder.subList(0, i);
+			}
+		}
+	}
+	
+	
+}

@@ -1,0 +1,11 @@
+package leetCode;
+
+import java.util.Set;
+
+public class wordBreak {
+	public boolean wordBreak(String s, Set<String> dict){
+		StringBuffer curS = new StringBuffer;
+		
+		
+	}
+}

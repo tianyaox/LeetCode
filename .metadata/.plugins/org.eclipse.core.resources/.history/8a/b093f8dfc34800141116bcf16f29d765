@@ -1,0 +1,48 @@
+package leetCode;
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+public class wordBreak {
+	public static void main(String[] args){
+		Set<String> mySet = new HashSet<String>(Arrays.asList("et","code","le"));
+		System.out.print(wordBreak1("leetcode",mySet));
+	}
+	public static boolean wordBreak(String s, Set<String> dict){
+		if (dict.size()==0) return false;
+		if (dict.contains(s)) return true;
+		for (int i=0;i<s.length();i++){
+			String curS = s.substring(0, i);
+			if (dict.contains(curS)){
+				dict.remove(curS);
+				if (wordBreak(s.substring(i,s.length()),dict)){
+					return true;
+				}
+				else{
+					dict.add(curS);
+					continue;
+				}
+			}
+		}
+		return false;
+	}
+	public static Boolean wordBreak1(String s, Set<String> dict){
+		Boolean[] a = new Boolean[s.length()+1];
+		Arrays.fill(a,false);
+		List<Boolean> dp = new ArrayList<Boolean>(Arrays.asList(a));
+		dp.add(0, true);
+		for (int i=1;i<s.length()+1;i++){
+			for (int j=0;j<i;j++){
+				if (dp.get(j)&&dict.contains(s.substring(j+1,i))){
+					dp.add(i,true);
+					break;
+				}
+			}
+//			dp.add(i,false);
+		}
+		return dp.get(s.length());
+	}
+}

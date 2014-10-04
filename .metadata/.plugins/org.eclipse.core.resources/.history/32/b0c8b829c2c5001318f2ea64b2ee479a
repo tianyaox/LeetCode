@@ -1,0 +1,7 @@
+package leetCode;
+
+public class ConstructBinaryTree {
+	public TreeNode construct(ArrayList<Integer> preorder,ArrayList<Integer> inorder){
+		
+	}
+}

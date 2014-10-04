@@ -1,0 +1,41 @@
+package leetCode;
+
+public class MultiplyString {
+    public String multiply(String num1, String num2) {
+        num1 = new StringBuilder(num1).reverse().toString();
+        num2 = new StringBuilder(num2).reverse().toString();
+        
+        int[] product = new int[num1.length()+num2.length()];
+        
+        for (int i=0;i<num1.length();i++){
+            int n1 = num1.charAt(i) - '0';
+            for (int j=0;j<num2.length();j++){
+                int n2 = num2.charAt(j) - '0';
+                product[i+j] += n1*n2;
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i=0;i<product.length;i++){
+            int curNum = product[i];
+            int curN = curNum%10;
+            int carry = curNum/10;
+            sb.insert(0,curN);
+            if (i<product.length-1){
+                product[i+1] += carry;
+            }
+        }
+        
+        while (sb.length()!=0 && sb.charAt(0)=='0'){
+            sb.deleteCharAt(0);
+        }
+        
+        if (sb.length()==0){
+            return "0";
+        }
+        else{
+            return sb.toString();
+        }
+        
+        
+    }
+}
