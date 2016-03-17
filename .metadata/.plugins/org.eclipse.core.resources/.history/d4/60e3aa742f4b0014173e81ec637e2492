@@ -1,7 +1,0 @@
-package leetCode;
-
-public class SurroundedRegion {
-	public void solve(char[][] board) {
-		
-	}
-}

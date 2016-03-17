@@ -9,9 +9,9 @@ import java.util.Set;
 public class WordBreak2 {
 	
 	public static void main(String[] args){
-//		Set<String> mySet = new HashSet<String>(Arrays.asList("cat", "cats", "and", "sand", "dog"));
-//		System.out.print(wordBreak("catsanddog",mySet).toString());
-		int[] a = new int[32];
+		Set<String> mySet = new HashSet<String>(Arrays.asList("cat", "cats", "and", "sand", "dog"));
+		System.out.print(wordBreak("catsanddog",mySet).toString());
+//		int[] a = new int[32];
 	}
 	public static List<String> wordBreak(String s, Set<String> dict){
 //		single word
